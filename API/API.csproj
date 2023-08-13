@@ -32,4 +32,7 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+      </ItemGroup>
+
 </Project>
