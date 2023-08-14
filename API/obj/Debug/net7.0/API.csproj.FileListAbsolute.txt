@@ -158,3 +158,6 @@ C:\Users\Shuvo Islam\Desktop\Ecommerce\API\obj\Debug\net7.0\refint\API.dll
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\obj\Debug\net7.0\API.pdb
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\obj\Debug\net7.0\ref\API.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
