@@ -5,6 +5,7 @@ import { IBrand } from '../models/brand';
 import { IProductType } from '../models/productType';
 import { map } from 'rxjs/operators';
 import { ShopParams } from '../models/shopParams';
+import { IProduct } from '../models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -41,6 +42,10 @@ export class ShopService {
     // }
     //  return this.http.get<IPagination>('https://localhost:7035/api/Products?PageSize=6&PageIndex='+shopeParams.pageNumber);
     return this.http.get<IPagination>(this.baseUrl+'products?'+(shopeParams.brandId?'brandId='+shopeParams.brandId.toString():'')+'&&'+(shopeParams.typeId?'typeId='+shopeParams.typeId.toString():'')+'&&'+(shopeParams.sort?'sort='+shopeParams.sort:'')+'&&'+(shopeParams.search?'search='+shopeParams.search:'')+'&&'+(shopeParams.pageNumber?'pageIndex='+shopeParams.pageNumber.toString():'')+'&&'+(shopeParams.pageSize?'PageSize='+shopeParams.pageSize.toString():''));
+  }
+  getProduct(id:number)
+  {
+    return this.http.get<IProduct>(this.baseUrl+'products/'+id);
   }
   getBrands()
   {
