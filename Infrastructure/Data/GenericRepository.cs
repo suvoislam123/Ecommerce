@@ -12,32 +12,37 @@ namespace Infrastructure.Data
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        private readonly StoreContext _context;
-
-        public GenericRepository(StoreContext context)
+        private readonly StoreContext _storeContext;
+        public GenericRepository(StoreContext storeContext)
         {
-            _context = context;
+            _storeContext = storeContext;
         }
         public async Task<T> GetByIdAsync(int id)
         {
-            return await _context.Set<T>().FindAsync(id);
+            return await _storeContext.Set<T>().FindAsync(id);
         }
-        public async Task<IReadOnlyList<T>> ListAllAsync()
+        public async Task<IReadOnlyList<T>> ListAllasync()
         {
-            return await _context.Set<T>().ToListAsync();
+            return await _storeContext.Set<T>().ToListAsync();
         }
-        public async Task<T> GetEntityWithSpec(ISpecification<T> spec)
+        public async Task<T> GetEntityWithSpec(ISpecification<T> specification)
         {
-            return await ApplySpecification(spec).FirstOrDefaultAsync();
+            return await ApplySpecification(specification).FirstOrDefaultAsync();
         }
-
-        public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec)
+        public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> specification)
         {
-            return await ApplySpecification(spec).ToListAsync();
+            return await ApplySpecification(specification).ToListAsync();
         }
-        private IQueryable<T> ApplySpecification(ISpecification<T> spec)
+        public async Task<int> CountAsync(ISpecification<T> spec)
         {
-            return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
+            return await ApplySpecification(spec).CountAsync();
+        }
+        private IQueryable<T> ApplySpecification(ISpecification<T> specification)
+        {
+            return SpecificationEvaluator<T>.GetQuery(
+                _storeContext.Set<T>().AsQueryable(),
+                 specification
+                 );
         }
     }
 }
