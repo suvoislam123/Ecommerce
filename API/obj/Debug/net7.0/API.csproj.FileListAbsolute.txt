@@ -161,3 +161,5 @@ C:\Users\Shuvo Islam\Desktop\Ecommerce\API\obj\Debug\net7.0\ref\API.dll
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\StackExchange.Redis.dll
