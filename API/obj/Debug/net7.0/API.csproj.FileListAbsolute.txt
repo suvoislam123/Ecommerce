@@ -163,3 +163,10 @@ C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\AutoMapper.Extension
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\StackExchange.Redis.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Shuvo Islam\Desktop\Ecommerce\API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
