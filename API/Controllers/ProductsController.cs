@@ -70,7 +70,7 @@ namespace API.Controllers
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
         {
-            var brands = await _productBrandsRepo.ListAllasync();
+            var brands = await _productBrandsRepo.ListAllAsync();
 
             return Ok(brands);
         }
@@ -78,7 +78,7 @@ namespace API.Controllers
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes()
         {
-            var types = await _productTypesRepo.ListAllasync();
+            var types = await _productTypesRepo.ListAllAsync();
 
             return Ok(types);
         }
